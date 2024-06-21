@@ -24,7 +24,7 @@ export function BlockItem({
 
       <button
         className="ml-auto text-rose-500 hover:text-rose-600 disabled:opacity-50 p-1"
-        disabled={removeBlockItemMutation.isLoading}
+        disabled={removeBlockItemMutation.isPending}
         onClick={handleRemove}
       >
         <Trash className="w-5 h-5" />
